@@ -2,14 +2,14 @@
 <html>
 <head>
 	<link 
-		  href='https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet'>
+		  href="https://fonts.googleapis.com/css?family=Butcherman' rel='stylesheet">
 <style>
 	body {
 	background-color:#FFE3ED;
 		font-family:font-family: 'Butcherman';font-size: 22px;	
 }
 #container{
-	width:960px;
+	width:600px;
 	margin: auto 0
 }
 header{
@@ -31,57 +31,71 @@ header{
 section{
 	margin: 100px;
 	padding: 10px;
-	background-color: #000000;
-	width: 300px;
-	height:300px;
+	background-color:#FFFFFF;
+	width: 1000px;
+	height:200px;
 
 }
 	article{
 	background-color:#000000;
 	width: 300%;
 	height:400px;
+		float:right;
+		 align-content: center;
+		
+		
 }
 footer{
-	width: 300%;
-height: 20px;
+	width: 1000%;
+height: 100px;
 background-color:#000000;
 }
 img {
-  float:inherit;
+  float:none;
 }
 	
 	</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <title>css1</title>
-	</head>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+</head>
 	<body>
 		<div id="container">
 	Free shipping over $45
 		<header> <h1> <center> Vixxen Lash Co.</center></h1></header>
 		
-			<nav><center>
+		  <nav><center>
 				<a href="assets/images/luxxbeautybrochure.pptx"> | Shop |</a> 
 				<a href="assets/images/luxxbeautybrochure.pptx"> New Arrivals | </a>
 				<a href="assets/images/luxxbeautybrochure.pptx"> Sale | </a> 
 				</center>		
 	</nav>
-		  <center><p><font color="#FFFFFF"> <h3>Chose Vixxen Lash Co. and Seduce with every blink!</h3></font></p></center>
-			<article><img src="assets/images/vixxenlogo.png" width="459" height="300px"></article>
+		 
+		  <center><p><font color="#FFFFFF"> <h3> Vixxen Lash Co. and Seduce with every blink!</h3></font></p></center>
+			<article>
+				<center><img src="assets/images/vixxenlogo.png" width="459" height="300px"></center></article>
 			
-						
+	</div>			
 		 
 <center> <h2>Featured Products </h2> </center>
+		<center><button id="Button1">Shop Now</button></center>
 			
-			 
-<img src="assets/images/eyelash.jpg" height="200px">
+			<section> 
+<center><img src="assets/images/eyelash.jpg" height="200px">
 			<img src="assets/images/vixxenpacking.png" width="200px" height="200px">
-	<img src="assets/images/vixxenset.png" width="220" height="200px">
-<img src="assets/images/lashextentshop.jpg" height="200px">
-		
-			  		
+	<img src="assets/images/vixxenset.png" width="220" height="200px"> 
+<img src="assets/images/lashextentshop.jpg" height="200px"></center>
+		</section>
 	<footer></footer>
-		
-	</div>
-	</body>	
+            <script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+            </script>
+	</body>
 	
 	</html>
