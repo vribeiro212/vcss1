@@ -41,8 +41,7 @@ section{
 	width: 200%;
 	height:400px;
 		float:right;
-		 align-content: center;
-		
+		 align-content: center;	
 		
 }
 footer{
@@ -51,22 +50,26 @@ height: 100px;
 background-color:#000000;
 }
 img {
-  float:left;
+  float: right;
 }
 	
 	</style>
 <link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
 <link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.dialog.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.resizable.min.css" rel="stylesheet" type="text/css">
 <meta charset="UTF-8">
 <title>css1</title>
 <script src="jQueryAssets/jquery-1.11.1.min.js"></script>
 <script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.dialog.min.js"></script>
 </head>
 	<body>
 		<div id="container">
-	Free shipping over $45
-		<header> <h1> <center> Vixxen Lash Co.</center></h1></header>
+	<button id="Button2">Free shipping over $45</button>
+	
+<header> <h1> <center> Vixxen Lash Co.</center></h1></header>
 		
 		  <nav><center>
 				<a href="assets/images/luxxbeautybrochure.pptx"> | Shop |</a> 
@@ -75,11 +78,13 @@ img {
 				</center>		
 	</nav>
 		 
-		  <center><p><font color="#FFFFFF"> <h3> Vixxen Lash Co. and Seduce with every blink!</h3></font></p></center>
+		  <center><p><font color="#FFFFFF"> <h3>Shop Vixxen Lash Co. and Seduce with every blink!</h3></font>
+			  
+		   
+	      </p></center>
 			<article>
 				<img src="assets/images/vixxenlogo.png" width="459" height="300px">
-				</article>
-			
+		  </article>	
 			
 	</div>			
 		 
@@ -96,6 +101,12 @@ img {
             <script type="text/javascript">
 $(function() {
 	$( "#Button1" ).button(); 
+});
+$(function() {
+	$( "#Dialog1" ).dialog(); 
+});
+$(function() {
+	$( "#Button2" ).button(); 
 });
             </script>
 	</body>
